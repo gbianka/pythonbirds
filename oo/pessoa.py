@@ -19,3 +19,9 @@ if __name__ == '__main__':
     print(maria.idade)
     for filho in maria.filhos:
         print(filho.nome)
+    maria.sobrenome = 'Teles'   # atribuito dinâmico apenas para o objeto maria.
+    del maria.filhos            # removendo dinamicamente um atributo
+    print(maria.__dict__)       # __dict__ retorna todos os atributos de instância do objeto, inclusive os dinâmicos
+    print(bianka.__dict__)
+
+
